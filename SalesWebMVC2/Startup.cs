@@ -40,8 +40,8 @@ namespace SalesWebMVC2
                     options.UseMySql(Configuration.GetConnectionString("SalesWebMVC2Context"), builder =>
                     builder.MigrationsAssembly("SalesWebMVC2")));
 
-            services.AddScoped<SeedingService>();
             services.AddScoped<SellerService>();
+            services.AddScoped<SeedingService>();
 
         }
 

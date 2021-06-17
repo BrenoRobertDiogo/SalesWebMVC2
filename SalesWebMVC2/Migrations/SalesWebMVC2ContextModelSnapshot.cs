@@ -38,8 +38,6 @@ namespace SalesWebMVC2.Migrations
 
                     b.Property<DateTime>("Date");
 
-                    b.Property<double>("MyProperty");
-
                     b.Property<int?>("SellerId");
 
                     b.Property<int>("Status");
