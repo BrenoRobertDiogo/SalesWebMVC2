@@ -8,6 +8,9 @@ namespace SalesWebMVC2.Models
     public class Seller
     {
         public int Id { get; set; }
+
+        [Required]
+        [StringLength(60, MinimumLength = 4, ErrorMessage = "Tamanho tem que ser entre 4 e 60")]
         public string Name { get; set; }
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
