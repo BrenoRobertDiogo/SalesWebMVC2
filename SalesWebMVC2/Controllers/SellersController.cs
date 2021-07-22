@@ -93,7 +93,7 @@ namespace SalesWebMVC2.Controllers
                 return RedirectToAction(nameof(Error), new { message = "Id not Found" });
             }
 
-            List<Department> departments = await _departmentService.FindAllAsync();
+            List<Department> departments =  await _departmentService.FindAllAsync();
             SellerFormViewModel viewModel = new SellerFormViewModel { Seller = obj, Departments = departments };
             return View(viewModel);
             }
